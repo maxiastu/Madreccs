@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menú | MADRE Trattoria</title>
+<meta name="description" content="Menú completo de MADRE Trattoria: antipasti, pizzas de masa madre, pastas, postres y bebidas."/>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/tailwind-config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<style>
+  .texture-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+  }
+  [id] { scroll-margin-top: 88px; }
+  [tabindex="-1"]:focus { outline: none; }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+<header data-header class="fixed top-0 w-full z-50 bg-surface-container-low/90 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-container-padding py-stack-sm w-full max-w-7xl mx-auto">
+<a href="index.html" aria-label="Volver al inicio" class="text-on-surface-variant hover:bg-primary-container/10 transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined">arrow_back</span>
+</a>
+<a href="index.html" class="font-display-lg-mobile text-display-lg-mobile text-primary tracking-tighter hover:opacity-80 transition-opacity">MADRE</a>
+<a href="index.html#reservas" class="bg-primary text-on-primary font-label-caps text-label-caps px-4 py-2 rounded-full hover:bg-primary-container/90 transition-colors">
+  Reservar
+</a>
+</div>
+</header>
+
+<main class="pt-[80px]">
+
+<section class="px-container-padding pt-section-gap pb-stack-lg relative overflow-hidden bg-surface-bright">
+<div class="absolute inset-0 texture-overlay"></div>
+<div class="relative z-10 max-w-xl mx-auto flex flex-col gap-stack-sm text-center">
+<span class="font-label-caps text-label-caps text-primary tracking-widest">LA CARTA</span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-on-surface">Menú completo</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+  Masa madre fermentada de 24 a 48 horas, horno de leña y producto de temporada.
+</p>
+</div>
+</section>
+
+<!-- Navegación entre secciones de la carta -->
+<nav aria-label="Secciones del menú" class="sticky top-[64px] z-40 bg-surface/95 backdrop-blur-md border-y border-outline-variant/30">
+<div class="flex gap-gutter overflow-x-auto px-container-padding py-3 max-w-7xl mx-auto">
+<a href="#antipasti" class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">ANTIPASTI</a>
+<a href="#pizzas" class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">PIZZAS</a>
+<a href="#pastas" class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">PASTAS</a>
+<a href="#dolci" class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">DOLCI</a>
+<a href="#bebidas" class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">BEBIDAS</a>
+</div>
+</nav>
+
+<!-- ANTIPASTI -->
+<section id="antipasti" class="px-container-padding py-section-gap bg-surface">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-lg">Antipasti</h2>
+<div class="flex flex-col gap-stack-md max-w-xl">
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Carpaccio Madre</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Láminas de lomito, rúcula selvática, lascas de parmesano reggiano y aderezo trufado.</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$16</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Burrata di Puglia</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Burrata cremosa, tomates confitados, albahaca y aceite de oliva virgen extra.</p>
+<span class="inline-block font-label-caps text-label-caps text-tertiary mt-2">VEGETARIANO</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$15</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Focaccia de la Madre</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Focaccia de masa madre, romero fresco, sal marina y aceite de oliva.</p>
+<span class="inline-block font-label-caps text-label-caps text-tertiary mt-2">VEGANO</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$9</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Polpette al Sugo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Albóndigas de res en salsa pomodoro lenta, parmesano y pan de masa madre.</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$13</span>
+</article>
+
+</div>
+</section>
+
+<!-- PIZZAS -->
+<section id="pizzas" class="px-container-padding py-section-gap bg-surface-bright relative overflow-hidden">
+<div class="absolute inset-0 texture-overlay"></div>
+<div class="relative z-10">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Pizzas de masa madre</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg max-w-xl">Fermentación de 24 a 48 horas, horneadas en leña a 450 °C.</p>
+<div class="flex flex-col gap-stack-md max-w-xl">
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pizza Garda</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Salsa pomodoro, mozzarella fior di latte, albahaca fresca y aceite de oliva virgen extra.</p>
+<span class="inline-block font-label-caps text-label-caps text-tertiary mt-2">LA MÁS PEDIDA</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$14</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pepperoni Miel Picante</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Doble pepperoni, mozzarella, peperoncino y un toque de miel infusionada con jalapeño.</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$18</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Quattro Formaggi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Mozzarella, gorgonzola, parmesano, provolone y nueces tostadas.</p>
+<span class="inline-block font-label-caps text-label-caps text-tertiary mt-2">VEGETARIANO</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$19</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ortolana</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Calabacín, berenjena, pimentón asado, cebolla morada y pomodoro.</p>
+<span class="inline-block font-label-caps text-label-caps text-tertiary mt-2">VEGANO</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$16</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tartufo e Funghi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Crema de trufa negra, hongos portobello, mozzarella y perejil fresco.</p>
+<span class="inline-block font-label-caps text-label-caps text-tertiary mt-2">SUGERENCIA DEL CHEF</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$21</span>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- PASTAS -->
+<section id="pastas" class="px-container-padding py-section-gap bg-surface">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-lg">Pastas</h2>
+<div class="flex flex-col gap-stack-md max-w-xl">
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cacio e Pepe</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Tonnarelli fresco, pecorino romano y pimienta negra recién molida.</p>
+<span class="inline-block font-label-caps text-label-caps text-tertiary mt-2">VEGETARIANO</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$17</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Rigatoni all'Amatriciana</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Guanciale curado en casa, pomodoro San Marzano, peperoncino y pecorino.</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$19</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Lasagna della Nonna</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Ragú de cocción lenta de ocho horas, besciamella y parmesano gratinado.</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$20</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Gnocchi al Pesto</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Ñoquis de papa, pesto genovés, piñones tostados y judías verdes.</p>
+<span class="inline-block font-label-caps text-label-caps text-tertiary mt-2">VEGETARIANO</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$18</span>
+</article>
+
+</div>
+</section>
+
+<!-- DOLCI -->
+<section id="dolci" class="px-container-padding py-section-gap bg-surface-bright relative overflow-hidden">
+<div class="absolute inset-0 texture-overlay"></div>
+<div class="relative z-10">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-lg">Dolci</h2>
+<div class="flex flex-col gap-stack-md max-w-xl">
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tiramisù Classico</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Mascarpone, savoiardi bañados en espresso y cacao amargo.</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$9</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Panna Cotta ai Frutti Rossi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Crema de vainilla de Madagascar con coulis de frutos rojos.</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$8</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cannoli Siciliani</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Ricotta de oveja, pistacho de Bronte y naranja confitada.</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$8</span>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- BEBIDAS -->
+<section id="bebidas" class="px-container-padding py-section-gap bg-surface">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-stack-lg">Bebidas</h2>
+<div class="flex flex-col gap-stack-md max-w-xl">
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Negroni de la Casa</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Gin, vermut rosso y bitter, reposado en barrica.</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$12</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Spritz Madre</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Aperol, prosecco, soda y naranja sanguina.</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$11</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Vino de la casa</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Tinto o blanco, por copa. Consulta la carta completa con el sommelier.</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$8</span>
+</article>
+
+<article class="flex justify-between items-start gap-gutter pb-stack-md border-b border-outline-variant/30">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Espresso / Cappuccino</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Café de origen, tostado semanalmente en Caracas.</p>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary shrink-0">$4</span>
+</article>
+
+</div>
+</section>
+
+<!-- CTA final -->
+<section class="px-container-padding py-section-gap bg-inverse-surface text-inverse-on-surface relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+<div class="relative z-10 max-w-xl mx-auto flex flex-col gap-stack-md text-center">
+<h2 class="font-headline-md text-headline-md text-on-tertiary">¿Listo para probarlo?</h2>
+<p class="font-body-md text-body-md text-surface-variant">Reserva tu mesa o haz tu pedido para llevar.</p>
+<div class="flex flex-col gap-3 mt-stack-sm">
+<a href="index.html#reservas" class="w-full bg-primary text-on-primary font-label-caps text-label-caps py-4 rounded-full text-center hover:bg-primary/90 transition-colors">
+  RESERVAR MESA
+</a>
+<a data-whatsapp="Hola MADRE, quiero hacer un pedido." data-requiere="whatsapp" href="#" target="_blank" rel="noopener"
+   class="w-full bg-transparent text-on-tertiary font-label-caps text-label-caps py-4 rounded-full text-center border border-on-tertiary/30 hover:bg-on-tertiary/10 transition-colors">
+  PEDIR POR WHATSAPP
+</a>
+</div>
+</div>
+</section>
+
+<footer class="bg-inverse-surface border-t border-outline-variant/20 flex flex-col justify-between items-center px-container-padding py-section-gap w-full">
+<div class="flex flex-col items-center gap-stack-md text-center">
+<a href="index.html" class="font-headline-md text-headline-md text-primary hover:opacity-80 transition-opacity">MADRE</a>
+<div class="flex flex-wrap justify-center gap-gutter mt-stack-sm">
+<a class="font-label-caps text-label-caps text-secondary-fixed-dim hover:text-primary-fixed transition-all" href="index.html">INICIO</a>
+<a class="font-label-caps text-label-caps text-secondary-fixed-dim hover:text-primary-fixed transition-all" href="index.html#reservas">RESERVACIONES</a>
+<a class="font-label-caps text-label-caps text-secondary-fixed-dim hover:text-primary-fixed transition-all" href="index.html#ubicacion">UBICACIÓN</a>
+<a class="font-label-caps text-label-caps text-secondary-fixed-dim hover:text-primary-fixed transition-all" href="privacidad.html">PRIVACIDAD</a>
+</div>
+</div>
+<p class="font-body-md text-body-md text-inverse-on-surface mt-stack-lg text-sm text-center">
+  © <span data-anio>2024</span> MADRE Trattoria. <span data-direccion></span> Todos los derechos reservados.
+</p>
+</footer>
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
