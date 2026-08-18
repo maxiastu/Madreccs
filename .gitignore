@@ -1,0 +1,17 @@
+# Configuración personal de Claude Code (no forma parte del sitio)
+.claude/
+skills/
+
+# Archivos comprimidos de origen
+*.zip
+
+# Vercel
+.vercel
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+*.log
